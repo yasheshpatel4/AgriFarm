@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+        <section class="container">
+            <div class="login-container">
+                <div class="circle circle-one"></div>
+                <div class="form-container">
+                    <img src="illustration.png" alt="illustration" class="illustration" />
+                    <h1 class="opacity">REGISTER</h1>
+                    <form id="form" method="post">
+                        <input type="text" name="username" placeholder="USERNAME" required />
+                        <input type="email" name="email" placeholder="EMAIL" required />
+                        <input type="password" name="password" placeholder="PASSWORD" required />
+                        <input type="password" placeholder="CONFIRM PASSWORD" required />
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                    
+                </div>
+                <div class="circle circle-two"></div>
+            </div>
+            <div class="theme-btn-container"></div>
+        </section>
+        <script>
+            document.getElementById('form').addEventListener('submit', function(event) {
+                // Prevent the form from submitting in the traditional way
+                event.preventDefault();
+    
+                // Display a pop-up message
+                alert('Login successful! Redirecting to the home page.');
+    
+                // Redirect to the home page
+                window.location.href = '../Html/index.html';
+            });
+        </script>
+    </body>
+</html>

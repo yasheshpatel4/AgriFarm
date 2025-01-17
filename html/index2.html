@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-image: url('../b5img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            text-align: left;
+            animation: slideInFromTop 2s ease-in-out;
+        }
+
+        h1 {
+            color: black;
+            font-size: 60px;
+            margin: 0;
+            animation: slideInFromTop 1s ease-in-out;
+        }
+
+        h4 {
+            color: black;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            animation: slideInFromTop 1s ease-in-out;
+        }
+
+        .container {
+            margin-top: 300px;
+            text-align: center;
+            background: transparent;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+            border-color: black;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: white;
+            font-size: 30px;
+            animation: slideInFromTop 1s ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #7bd55d;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(28, 31, 33);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-text">
+        <h1>AgriFarm</h1>
+        <h4>Basic information related to agriculture..</h4>
+    </div>
+
+    <div class="container">
+        <h2>Welcome AgriFarm !</h2>
+        <a href="../Html/register.html" class="btn">Click Here to Register</a>
+        <a href="../Html/login.html" class="btn">Click Here to Login</a>
+    </div>
+</body>
+</html>

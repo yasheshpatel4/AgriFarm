@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Identification Guide</title>   
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        .card {
+            width: 18rem;
+        }
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        .no-data {
+            display: none;
+            font-size: 1.25rem;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 border-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-1" href="#">AGRI<span class="text-success">FARM</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active text-success" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="schol.html">Schemes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ferti.html">FertiCalc</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="plantd.html">DiseaseGuide</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">AboutUs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+        </header>
+<section class="container my-5">
+    <div class="text-center my-5">
+        <h1>Plant Disease Identification Guide</h1>
+        <hr class="w-25 m-auto">
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter mb-4">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" id="search" class="form-control" placeholder="Search for a disease...">
+            </div>
+            <div class="col-md-4">
+                <select id="affects" class="form-select">
+                    <option value="">Affects:</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="seed">Seed</option>
+                    <option value="seedlings">Seedlings</option>
+                    <option value="flower">Flower</option>
+                    <option value="stems">Stems</option>
+                    <option value="roots">Roots</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select id="location" class="form-select">
+                    <option value="">Found In:</option>
+                    <option value="soil">Soil</option>
+                    <option value="greenhouse">Greenhouse/Tunnel</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disease Cards -->
+    <section id="disease-cards" class="team my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="roots" data-location="soil">
+                        <img src="../b5img/pd1.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Allium White Rot">
+                        <div class="card-body">
+                          <h5 class="card-title">Allium White Rot</h5>
+                          <a href="d1.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="flowers" data-location="greenhouse">
+                        <img src="../b5img/pd2.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Mosaic Virus">
+                        <div class="card-body">
+                          <h5 class="card-title">Bean Mosaic Virus</h5>
+                          <a href="d2.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="seedlings" data-location="soil">
+                        <img src="../b5img/pd3.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Powdery Mildew">
+                        <div class="card-body">
+                          <h5 class="card-title">Bean Powdery Mildew</h5>
+                          <a href="d3.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="roots" data-location="greenhouse">
+                        <img src="../b5img/pd4.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Root Rot">
+                        <div class="card-body">
+                          <h5 class="card-title">Bean Root Rot</h5>
+                          <a href="d4.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="no-data" class="no-data">Data is not available.</div>
+        </div>
+
+        
+    </section>
+    <section id="disease-cards" class="team my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="fruit" data-location="soil">
+                        <img src="../b5img/pd5.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Allium White Rot">
+                        <div class="card-body">
+                          <h5 class="card-title">Bean Rust</h5>
+                          <a href="d5.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="flower" data-location="soil">
+                        <img src="../b5img/pd6.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Mosaic Virus">
+                        <div class="card-body">
+                          <h5 class="card-title">Cabbage Soft Rot</h5>
+                          <a href="d6.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="seedlings" data-location="soil">
+                        <img src="../b5img/pd7.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Powdery Mildew">
+                        <div class="card-body">
+                          <h5 class="card-title">Brassica Alternaria Leaf Spo</h5>
+                          <a href="d7.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                    <div class="card" data-affects="seedlings" data-location="greenhouse">
+                        <img src="../b5img/pd8.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Root Rot">
+                        <div class="card-body">
+                          <h5 class="card-title">Brassica Black Rot</h5>
+                          <a href="d8.html" class="btn btn-primary">Show</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="no-data" class="no-data">Data is not available.</div>
+        </div>
+    </section>
+
+</section>
+<section id="disease-cards" class="team my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                <div class="card" data-affects="fruit" data-location="greenhouse">
+                    <img src="../b5img/pd9.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Allium White Rot">
+                    <div class="card-body">
+                      <h5 class="card-title">Brassica Downy Mildew
+                    </h5>
+                      <a href="d9.html" class="btn btn-primary">Show</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                <div class="card" data-affects="flower" data-location="greenhouse">
+                    <img src="../b5img/pd10.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Mosaic Virus">
+                    <div class="card-body">
+                      <h5 class="card-title">Cabbage Soft Rot</h5>
+                      <a href="d12.html" class="btn btn-primary">Show</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                <div class="card" data-affects="seedlings" data-location="greenhouse">
+                    <img src="../b5img/pd11.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Powdery Mildew">
+                    <div class="card-body">
+                      <h5 class="card-title">Carrot Leaf Blight</h5>
+                      <a href="d11.html" class="btn btn-primary">Show</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                <div class="card" data-affects="roots" data-location="greenhouse">
+                    <img src="../b5img/pd12.jpg" class="card-img-top img-fluid border border-primary p-2" alt="Bean Root Rot">
+                    <div class="card-body">
+                      <h5 class="card-title">Carrot Powdery Mildew</h5>
+                      <a href="d10.html" class="btn btn-primary">Show</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="no-data" class="no-data">Data is not available.</div>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+        function applyFilters() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const affects = document.getElementById('affects').value;
+            const location = document.getElementById('location').value;
+
+            const cards = document.querySelectorAll('#disease-cards .card');
+            const noDataMessage = document.getElementById('no-data');
+
+            let anyVisible = false;
+
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const cardAffects = card.getAttribute('data-affects');
+                const cardLocation = card.getAttribute('data-location');
+
+                if ((search === '' || title.includes(search)) &&
+                    (affects === '' || cardAffects === affects) &&
+                    (location === '' || cardLocation === location)) {
+                    card.style.display = 'block';
+                    anyVisible = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show or hide the no data message based on visibility of cards
+            noDataMessage.style.display = anyVisible ? 'none' : 'block';
+        }
+
+        // Add event listeners to input fields
+        document.getElementById('search').addEventListener('input', applyFilters);
+        document.getElementById('affects').addEventListener('change', applyFilters);
+        document.getElementById('location').addEventListener('change', applyFilters);
+
+        // Initial call to show all cards
+        applyFilters();
+        
+    </script>
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5>About Us</h5>
+              <p>AGRI FARM is dedicated to supporting farmers with information on government schemes, crop management, and agricultural best practices.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Contact Us</h5>
+              <p>Email: info@agrifarm.com</p>
+              <p>Phone: +1-800-123-4567</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Follow Us</h5>
+              <a href="https://www.facebook.com" class="text-light me-3" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com" class="text-light me-3" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" class="text-light" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="mb-0">© 2024 AGRI FARM. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

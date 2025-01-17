@@ -1,0 +1,43 @@
+/* Styles specific to the footer section */
+
+/* Ensure the footer has a dark background and light text */
+footer.footer {
+    background-color: #343a40; /* Dark background specific to footer */
+    color: #f8f9fa; /* Light text color */
+  }
+  
+  /* Center the text within the footer */
+  footer.footer .text-center {
+    text-align: center;
+  }
+  
+  /* Add some padding and margin adjustments */
+  footer.footer .container {
+    padding: 1rem;
+  }
+  
+  /* Style the footer headings */
+  footer.footer h5 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the footer links */
+  footer.footer a {
+    color: #f8f9fa; /* Light text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  footer.footer a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+  }
+  /* Add styles for social media icons in the footer */
+footer.footer .fab {
+    font-size: 1.5rem; /* Adjust size of icons */
+    margin: 0 0.5rem; /* Space out the icons */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  footer.footer .fab:hover {
+    color: #17a2b8; /* Change color on hover */
+  }
+  
