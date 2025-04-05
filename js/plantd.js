@@ -3,15 +3,14 @@ function applyFilters() {
     const affects = document.getElementById('affects').value;
     const location = document.getElementById('location').value;
     
-    // Example data
+    // Example data for diseases
     const diseases = [
         { name: 'Disease 1', img: 'images/disease1.jpg', affects: 'fruit', location: 'soil' },
         { name: 'Disease 2', img: 'images/disease2.jpg', affects: 'flowers', location: 'greenhouse' }
         // Add more disease objects
     ];
-
     const cardsContainer = document.getElementById('disease-cards');
-    cardsContainer.innerHTML = ''; // Clear existing cards
+    cardsContainer.innerHTML = ''; // Clear cards
 
     diseases.forEach(disease => {
         if ((search === '' || disease.name.toLowerCase().includes(search)) &&
