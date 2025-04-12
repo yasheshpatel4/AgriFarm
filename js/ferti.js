@@ -1,4 +1,14 @@
-
+function calculateFertilizer() {
+    const cropType = document.getElementById("crop-type").value;
+    const soilType = document.getElementById("soil-type").value;
+    const fertilizerReq = document.getElementById("fertilizer-req").value;
+  
+    // Perform calculations based on the input parameters
+    const fertilizerAmount = predictFertilizerAmount(cropType, soilType, fertilizerReq);
+  
+    // Display the results
+    document.getElementById("result").innerHTML =`The recommended fertilizer amount is ${fertilizerAmount.toFixed(2)} kg.`;
+}
   
 function predictFertilizerAmount(cropType, soilType, fertilizerReq) {
     let baseFertilizer = fertilizerReq;
